@@ -1,0 +1,110 @@
+#demo {
+    margin: 2rem 4rem;
+    text-align: left;
+    width:100vw;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+#demo .wrapper {
+    display: inline-block; 
+    margin: 0 10px 0 0;
+    height: 10px;
+    position: relative;
+}
+
+#demo .parent {
+    text-align:"left";
+    width: 80vw;
+    display: block;
+    cursor: pointer;
+    line-height: 30px;
+    padding:1rem 1.5rem;
+    border-radius: 5px;
+    background: #F9F9F9;
+    border: 1px solid #AAA;
+    border-bottom: 1px solid #777;
+    color: #282D31;
+    font-weight: bold;
+    z-index: 2;
+    position: relative;
+    text-align: left;
+}
+
+
+#demo .parent:hover,
+#demo .content:hover ~ .parent {
+    background: #fff;
+   
+}
+
+#demo .content:hover ~ .parent {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    z-index: 0;
+}
+
+#demo .content {
+    position: absolute;
+    top: 0;
+    display: block;
+    z-index: 1;
+    height: 1rem;
+    width: 71.3rem;
+    padding-top: 10px;
+    border: 1px solid #777;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.4);
+}
+
+#demo .wrapper:active .content {
+    height: 123px;
+    z-index: 3;
+   
+}
+
+#demo .content:hover {
+    height: 123px;
+    z-index: 3;
+   
+}
+
+
+#demo .content ul {
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#demo .content ul a {
+    text-decoration: none;
+}
+
+#demo .content li {
+    background: #eee;
+   padding:5px 25px
+}
+#demo .content li:hover {
+    background: #eee;
+    color: #333;
+   
+}
+
+#demo .content li {
+    list-style: none;
+    text-align: left;
+    color: #888;
+    font-size: 14px;
+    line-height: 30px;
+    height: 30px;
+    padding-left: 10px;
+    border-top: 1px solid #ccc;
+}
+
+#demo .content li:last-of-type {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
